@@ -20,12 +20,15 @@
   display: none;
 
   transform-origin: top;
-  transition-property: dropdown-menu;
+  transition-property: all;
   animation: render 500ms ease-in-out;
 }
 @keyframes render {
   0% {
     transform: scaleY(0);
+  }
+  70% {
+    transform: scaleY(1.2);
   }
   100% {
     transform: scaleY(1);
